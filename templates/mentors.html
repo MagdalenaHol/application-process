@@ -12,6 +12,21 @@
             <button type="submit">Search</button>
         </form>
     </div>
+    <div>
+    <br>
+        <form action="/mentors">
+            <label for="city-name">Select a city:</label>
+            <select id="city-name" name="city-name">
+                <option value="Bucharest">Bucharest</option>
+                <option value="Budapest">Budapest</option>
+                <option value="Kraków">Kraków</option>
+                <option value="Miskolc">Miskolc</option>
+                <option value="Warsaw">Warsaw</option>
+            </select>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <br>
 
     <div id="mentors">
         {% for mentor in mentors %}
